@@ -1,0 +1,85 @@
+/* ===== 银狼主题 自定义样式 ===== */
+
+/* ---------- 1. 头像：默认不转，悬停才旋转 ---------- */
+.avatar-img,
+#site-info .avatar-img,
+.author-info__avatar img {
+  transition: transform 0.6s ease;
+}
+.avatar-img:hover,
+#site-info .avatar-img:hover,
+.author-info__avatar img:hover {
+  transform: rotate(360deg);
+}
+
+/* ---------- 2. 背景图全屏显示（cover + 固定） ---------- */
+#page-header {
+  height: 100vh !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+/* 文章页 / 普通页面的顶图也全屏 */
+#page-header.post-bg,
+#page-header.not-home-page {
+  height: 100vh !important;
+}
+/* 顶图里的标题信息往下挪一点，居中更好看 */
+#page-header .home-site-info,
+#page-header #site-info,
+#page-header #post-info {
+  top: 43%;
+}
+
+/* ---------- 3. 首页卡片半透明，能透出背景 ---------- */
+/* 首页文章卡片 */
+.layout.is-center #recent-posts > .recent-post-item,
+#recent-posts > .recent-post-item {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+}
+/* 首页侧边栏卡片 */
+#aside-content .card-widget {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+/* ---------- 4. 文章页 / 关于页：纯白不透明 ---------- */
+#post,
+#page {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+}
+
+/* 暗色模式下保持原主题深色，不强制白 */
+[data-theme="dark"] #post,
+[data-theme="dark"] #page {
+  background: #1f1f1f !important;
+}
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(31, 31, 31, 0.72);
+}
+
+/* ---------- 5. 自定义箭头光标 + 选中特效 ---------- */
+/* 常态：崩铁风银狼配色箭头（白底紫边） */
+* {
+  cursor: url(/img/cursor-arrow.svg) 4 3, auto !important;
+}
+/* 可点击元素：紫底白边箭头 */
+a, button, .button, input[type="submit"], input[type="button"],
+#menus a, .card-widget, .recent-post-item, label, summary,
+.tag-cloud-tags a, .pagination a {
+  cursor: url(/img/cursor-pointer.svg) 4 3, pointer !important;
+}
+
+/* 文字选中特效 */
+::selection {
+  background: #9370DB;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #9370DB;
+  color: #ffffff;
+}
