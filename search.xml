@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>开篇</title>
+      <link href="/2025/06/13/kaipian/"/>
+      <url>/2025/06/13/kaipian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在最前">写在最前</h2><p>这里放一些生活感悟、对各种事情的看法。</p><p>随便写写，想到什么写什么。</p><p>（这是占位文章，你可以直接编辑 <code>source/_posts/kaipian.md</code> 改成自己想写的内容，或者删掉它再写新的。）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学习笔记示例 - 图灵机基础</title>
       <link href="/2025/06/12/note-example/"/>
       <url>/2025/06/12/note-example/</url>
